@@ -1,0 +1,21 @@
+{
+  "author": "Jason Cox",
+  "checksums": {
+    "Rakefile": "f37e6131fe7de9a49b09d31596f5fbf1",
+    "manifests/init.pp": "e0b78100e615afe770c7f2906a8975f6",
+    "Modulefile": "6997f4e3f58bbf0cf5ae2f16a253f6ae",
+    "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
+    "tests/init.pp": "8bdade6a56e2ee56562b1ef66208c2e1",
+    "spec/spec_helper.rb": "3ea886dd135e120afa31e0aab12e85b0",
+    "README.markdown": "346197995dddc289fcb225f0af1fc604"
+  },
+  "dependencies": [],
+  "description": "Setup and installs the PostgreSQL PgPool connection pooler.\nThis allows for distributed reads to a PostgreSQL cluster",
+  "license": "Apache License, Version 2.0",
+  "name": "jlcox-pgpool",
+  "project_page": "https://github.com/jlcox1970/pgpool",
+  "source": "https://github.com/jlcox1970/pgpool.git",
+  "summary": "PgPool  Module",
+  "types": [],
+  "version": "0.1.0"
+}
