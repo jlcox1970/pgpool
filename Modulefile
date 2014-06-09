@@ -10,3 +10,4 @@ project_page 'https://github.com/jlcox1970/pgpool'
 
 ## Add dependencies, if any:
 # dependency 'username/name', '>= 1.2.0'
+dependency 'stahnma/epel', '0.0.6'
