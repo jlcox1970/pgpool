@@ -1,4 +1,4 @@
-class pgpool::reatttach (
+class pgpool::reattach (
   $pcp_port = $pgpool::pcp_port,
   $pcp_user = $pgpool::pcp_user,
   $pcp_password = $pgpool::pcp_password,

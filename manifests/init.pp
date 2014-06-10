@@ -35,12 +35,12 @@ class pgpool (
     ensure  => running,
     enable  => true
   } ->
-
-  file { "/etc/pgpool-II-93/pgpool.conf":
-    mode    => 644,
-    source  => "puppet:///modules/${module_name}/pgpool.conf",
-    notify  => Service["pgpool-II-93"],
+  pgpool::conf_set { $pcp_user :
+    value       => $hash_password,
+    separator   => ':',
+    config_file => '/etc/pgpool-II/pgpool.conf',
   } ->
+
   class { pgpool::pcp_conf : } ->
   class { pgpool::reattach : } ->
   file { "/var/run/pgpool":
@@ -48,7 +48,7 @@ class pgpool (
     mode    => 644,
     owner   => postgres,
     group   => postgres,
-  }
+  } ->
   file { "/var/log/pgpool-II":
     ensure  => "directory",
     mode    => 644,
